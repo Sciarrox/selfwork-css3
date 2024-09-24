@@ -1,0 +1,149 @@
+* {
+    font-family: "Electrolize", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Roboto Condensed", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+.navbar {
+    display: flex;
+    background-color: red;
+    height: 15vh;
+    justify-content: space-around;
+    width: 100%;
+}
+
+body, html {
+    background: linear-gradient(#bf0fff,#cbff49);
+    margin: 0px;
+    margin-bottom: 500px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.no-pallino{
+    list-style-type: none;
+    display: flex;
+}
+
+.a2 {
+    display: flex;
+    text-decoration: none;
+    margin: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.btn {
+    padding: 15px;
+    border: 3px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transform: translateY(-3px);
+}
+
+.flex {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    padding: 50px 20px;
+    margin: 0px;
+}
+
+aside {
+    background-color: yellow;
+}
+
+article {
+    width: 60%;
+}
+
+.intestazione {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.textedit {
+    font-size: 40px;
+}
+
+.immagineaside {
+    width: 300px;
+}
+
+.btnarticle {
+    padding: 10px 20px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.tornasu2 {
+    position: fixed;
+    height: 30px;
+    right: 0px;
+    bottom: 0px;
+    animation-name: pulse;
+    animation: pulse 2s infinite;
+}
+
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .flex {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    article {
+        width: 100%;
+    }
+
+    aside {
+        width: 90%;
+        margin-top: 20px;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.pulse-effect {
+    animation: pulse 2s infinite;
+}
